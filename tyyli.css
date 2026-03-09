@@ -1,0 +1,136 @@
+/* kaikille yhteiset tyylit*/
+
+:root {
+     --primary-color:#355440;
+     --text-color: #355440;
+     --background-color:#DCDFD0;
+}
+
+body {color:var(--text-color);
+     background-color:var(--background-color);
+     font-family: "Open Sans", sans-serif;}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+ color:var(--primary-color)}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+ text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 + p {
+  margin-top: 0.2rem;
+}
+
+p {
+     text-align: justify
+}
+
+header {display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     gap: 25px;
+}
+
+footer {text-align: center;
+font-size: 12px}
+
+.korostus {color:var(--primary-color)}
+
+#open span {
+  width: 8em;
+  display: inline-block;
+
+}
+#open li {list-style: none;}
+
+/* linkit*/
+p a {
+  color: #355440;
+  text-decoration: underline;
+}
+
+p a:hover {
+  color: #98B4D0;
+}
+
+/* navigointi*/
+#topnav ul {font-family: "Raleway", sans-serif;
+     padding-left: 0px;
+    & li {display: inline-block;
+margin: 0 20px;
+margin-bottom: 25px}
+    & a {color:var(--primary-color);
+          text-decoration: none;}
+    & a.active {color:#98B4D0}
+    & a:hover {color: #98B4D0}
+    }
+
+/* kuvat */
+#logo {vertical-align: middle;}
+
+.koirakuva {       
+     max-height: 400px;
+            max-width: 400px;
+           display: block;
+           margin:auto;
+}
+           
+.etusivukuva {
+     max-width: 600px;
+     display: block;
+     margin: auto;
+}
+
+/* mobiili */
+
+@media only screen and (max-width:430px) {
+#topnav ul li {
+        text-align: center;}
+
+#topnav a {font-size: 1.5em;}
+header {display: flex;
+        flex-direction: column-reverse;
+     font-size: 10px;}
+
+}
+
+/* keskikokoiset näytöt */
+@media only screen and (min-width:431px){
+.flex_container {
+     display: flex;
+     row-gap: 10px;
+     column-gap:80px;
+}
+
+.koirat {
+     flex-wrap: wrap;
+     justify-content: center;
+     }
+}
+
+.koirat div {flex: 300px;}
+              
+.flex_item {flex:1;
+         }
+     
+
+/*isot näytöt*/
+@media only screen and (min-width:1200px)
+{
+     body {width: 900px;
+     margin:auto;
+     border:#DCDFD0 1px;
+     padding: 10px;}
+
+}
