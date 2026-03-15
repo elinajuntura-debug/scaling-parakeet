@@ -61,7 +61,7 @@ p a {
 }
 
 p a:hover {
-  color: #98B4D0;
+  color: #3d4e60;
 }
 
 /* navigointi*/
@@ -72,8 +72,8 @@ margin: 0 20px;
 margin-bottom: 25px}
     & a {color:var(--primary-color);
           text-decoration: none;}
-    & a.active {color:#98B4D0}
-    & a:hover {color: #98B4D0}
+    & a.active {color:#3d4e60}
+    & a:hover {color: #3d4e60}
     }
 
 /* kuvat */
